@@ -24,10 +24,5 @@ https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.min.js
     brktfldg.collapseBrackets(
         document.querySelector('p')
     )
-
-    // Results in:
-    // <p>
-    //     This is a paragraph (…).
-    // </p>
 </script>
 ```
