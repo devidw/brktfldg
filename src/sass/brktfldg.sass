@@ -1,0 +1,44 @@
+brktfldg-container
+    &::after,
+    brktfldg-content::after,
+    brktfldg-toggle
+        opacity: .5
+
+    brktfldg-toggle
+        display: inline-block
+        letter-spacing: -1px
+        margin-left: -1.5px
+
+        &::before
+            content: "("
+
+    &:not(.brktfldg-container--open)
+
+        &:not(.brktfldg-container--short)
+            &::after
+                content: attr(data-brktfldg-word-count)
+                // vertical-align: sub
+                font-size: small
+                margin-left: 1.5px
+
+        brktfldg-toggle
+            cursor: zoom-in
+
+            &::after
+                content: ")"
+
+        brktfldg-content
+            display: none
+
+    &.brktfldg-container--open
+        filter: contrast(.5)
+
+        brktfldg-toggle
+            cursor: zoom-out
+            margin-right: 0.5ch
+
+        brktfldg-content
+            display: initial
+
+            &::after
+                content: ")"

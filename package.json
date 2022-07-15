@@ -1,0 +1,31 @@
+{
+  "name": "@devidw/brktfldg",
+  "version": "0.1.0",
+  "description": "Bracket folding. Collapse and expand brackets on any website.",
+  "main": "src/js/brktfldg.js",
+  "type": "module",
+  "scripts": {
+    "build-css": "sass ./src/sass/brktfldg.sass ./dist/brktfldg.min.css --style compressed"
+  },
+  "dependencies": {
+    "sass": "^1.53.0",
+    "webpack-cli": "^4.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devidw/brktfldg.git"
+  },
+  "keywords": [
+    "reading",
+    "readability",
+    "focus",
+    "enhancement",
+    "bracket"
+  ],
+  "author": "David Wolf",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/devidw/brktfldg/issues"
+  },
+  "homepage": "https://github.com/devidw/brktfldg#readme"
+}
