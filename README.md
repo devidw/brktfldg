@@ -1,5 +1,15 @@
 # brktfldg
 
+
+## About
+
+Read [about](https://github.com/devidw/brktfldg-demo#about) the project
+
+
+## Usage
+
+### Browser
+
 ```
 https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.min.css
 ```
