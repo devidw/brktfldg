@@ -1,8 +1,5 @@
 # brktfldg
 
-
-## About
-
 Read [about](https://github.com/devidw/brktfldg-demo#about) the project
 
 
