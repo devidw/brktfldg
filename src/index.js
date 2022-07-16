@@ -195,7 +195,7 @@ class BrktFldg {
     /** 
      * Add toggle functionality to the toggle elements
      */
-    setEventListeners() {
+    addEventListeners() {
         const toggles = this.el.querySelectorAll("brktfldg-toggle")
         toggles.forEach((toggle) => {
             const container = toggle.parentElement
@@ -222,6 +222,12 @@ class BrktFldg {
      * Main function to process the content and make all brackets collapsible
      */
     collapseBrackets() {
+        const isCollapsed = this.el.querySelector('brktfldg-container')
+
+        if (isCollapsed) {
+            return
+        }
+
         const brackets = this.getBrackets(this.el)
         const pairs = this.getPairs(brackets)
         this.wrapBrackets(pairs)
@@ -230,7 +236,7 @@ class BrktFldg {
             this.processWordCounts()
         }
 
-        this.setEventListeners()
+        this.addEventListeners()
     }
 }
 
