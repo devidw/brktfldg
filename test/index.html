@@ -12,12 +12,32 @@
 
 <body>
     <div id="brackets">
-        dsfsdfl (sdlkjfl) sdfljkjkdslf
+        <p>…</p>
+        a ( c) . (d)
+        <p>
+            a ( b ) c ( d )
+            <br>
+            <span>
+                a ( b ) c ( d )
+            </span>
+        </p>
+        <p>
+            a (
+            <i>
+                b ha mein sdjf sdklf
+            </i>
+            ) c
+        </p>
     </div>
 
     <script>
         brktfldg.collapseBrackets(
-            document.getElementById('brackets')
+            document.getElementById('brackets'),
+            {
+                wordCount: false,
+                openChar: "{",
+                closeChar: "}"
+            }
         )
     </script>
 </body>

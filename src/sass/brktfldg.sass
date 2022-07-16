@@ -1,31 +1,33 @@
 brktfldg-container
-    &::after,
+    &::before,
+    brktfldg-toggle,
     brktfldg-content::after,
-    brktfldg-toggle
+    &::after
         opacity: .5
+
+    &::before
+        content: attr(data-brktfldg-open-char)
+
+    &::after
+        content: attr(data-brktfldg-close-char)
 
     brktfldg-toggle
         display: inline-block
         letter-spacing: -1px
         margin-left: -1.5px
 
-        &::before
-            content: "("
+        &::after
+            content: attr(data-brktfldg-placeholder)
 
     &:not(.brktfldg-container--open)
-
         &:not(.brktfldg-container--short)
-            &::after
+            brktfldg-toggle[data-brktfldg-word-count]::after
                 content: attr(data-brktfldg-word-count)
-                // vertical-align: sub
                 font-size: small
                 margin-left: 1.5px
 
         brktfldg-toggle
             cursor: zoom-in
-
-            &::after
-                content: ")"
 
         brktfldg-content
             display: none
@@ -39,6 +41,3 @@ brktfldg-container
 
         brktfldg-content
             display: initial
-
-            &::after
-                content: ")"
