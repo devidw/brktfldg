@@ -5,11 +5,7 @@ Read [about](https://github.com/devidw/brktfldg-demo#about) the project
 
 ## Usage
 
-Load the library using the following CDN links for style and script:
-
-```
-https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.min.css
-```
+Load the library using the following CDN link:
 
 ```
 https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.min.js

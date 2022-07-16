@@ -1,17 +1,18 @@
 {
   "name": "@devidw/brktfldg",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Bracket folding. Collapse and expand brackets on any website.",
   "main": "src/js/brktfldg.js",
   "type": "module",
   "scripts": {
-    "build-sass": "sass ./src/sass/brktfldg.sass ./dist/brktfldg.min.css --style compressed",
-    "watch-sass": "sass ./src/sass/brktfldg.sass ./dist/brktfldg.min.css --style compressed --watch",
-    "build": "yarn run build-sass",
-    "watch": "yarn run watch-sass"
+    "build": "webpack",
+    "watch": "webpack --watch"
   },
   "dependencies": {
+    "css-loader": "^6.7.1",
     "sass": "^1.53.0",
+    "sass-loader": "^13.0.2",
+    "style-loader": "^3.3.1",
     "webpack": "^5.73.0",
     "webpack-cli": "^4.10.0"
   },

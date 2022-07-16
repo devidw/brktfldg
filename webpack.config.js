@@ -1,10 +1,6 @@
 import path from 'path'
 
 export default {
-    watch: true,
-    entry: [
-        path.resolve('./src/js/brktfldg.js'),
-    ],
     output: {
         path: path.resolve('./dist'),
         filename: 'brktfldg.min.js',
@@ -12,5 +8,17 @@ export default {
             name: 'brktfldg',
             type: 'umd',
         }
+    },
+    module: {
+        rules: [
+            {
+                test: /\.sass$/,
+                use: [
+                    'style-loader',
+                    'css-loader',
+                    'sass-loader',
+                ],
+            },
+        ],
     },
 }
