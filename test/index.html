@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="../dist/brktfldg.min.js"></script>
 </head>
 
 <body>
@@ -29,13 +28,16 @@
         </p>
     </div>
 
-    <script>
-        brktfldg.collapseBrackets(
+    <script type="module">
+        import { collapseBrackets } from '../dist/brktfldg.js'
+
+        collapseBrackets(
             document.getElementById('brackets'),
             {
                 wordCount: false,
                 openChar: "{",
-                closeChar: "}"
+                closeChar: "}",
+                expandShortOnHover: false,
             }
         )
     </script>

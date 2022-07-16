@@ -1,13 +1,15 @@
 import path from 'path'
 
 export default {
+    experiments: {
+        outputModule: true,
+    },
     output: {
         path: path.resolve('./dist'),
-        filename: 'brktfldg.min.js',
+        filename: 'brktfldg.js',
         library: {
-            name: 'brktfldg',
-            type: 'umd',
-        }
+            type: 'module',
+        },
     },
     module: {
         rules: [

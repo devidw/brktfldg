@@ -5,10 +5,11 @@ class BrktFldg {
     options = {
         openChar: '(', // Replaces the original opening bracket
         closeChar: ')', // Replaces the original closing bracket
-        placeholder: '⋅⋅⋅', // Displayed as text for the toggle to expand and collapse the content
+        placeholder: '…', // Displayed as text for the toggle to expand and collapse the content
         shortMaxWords: 1, // Number of words to determine if the content is short, quick expanding is possible on short conent when enabled and the word count is not displayed on short content
         wordCount: true, // Show word count
         expandShortOnHover: true, // Expand brackets with short content on hover
+        ignoreTags: ['script', 'style', 'pre', 'code', 'brktfldg-container',] // Ignore these tags
     }
 
     constructor(el, options = {}) {
@@ -60,7 +61,7 @@ class BrktFldg {
             else if (
                 child.nodeType === Node.ELEMENT_NODE
                 && child.hasChildNodes()
-                && child.tagName !== 'SCRIPT'
+                && !this.options.ignoreTags.includes(child.tagName.toLowerCase())
             ) {
                 brackets.push(...this.getBrackets(child))
             }
