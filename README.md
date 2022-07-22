@@ -11,8 +11,6 @@ Load the library using the following CDN link:
 https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.js
 ```
 
-The `brktfldg` variable is available on the `window` object once the library is loaded.
-
 To add collapse/expand functionality to all brackets inside an element and its children, use the `collapseBrackets(el, options)` function.
 
 ```html
@@ -20,8 +18,10 @@ To add collapse/expand functionality to all brackets inside an element and its c
     This is a paragraph (and this is something useless).
 </p>
 
-<script>
-    brktfldg.collapseBrackets(
+<script type="module">
+    import { collapseBrackets } from 'https://cdn.jsdelivr.net/npm/@devidw/brktfldg/dist/brktfldg.js'
+
+    collapseBrackets(
         document.querySelector('p')
     )
 </script>
