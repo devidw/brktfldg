@@ -14,11 +14,11 @@ export default {
     module: {
         rules: [
             {
-                test: /\.sass$/,
+                test: /\.styl$/,
                 use: [
                     'style-loader',
                     'css-loader',
-                    'sass-loader',
+                    'stylus-loader',
                 ],
             },
         ],

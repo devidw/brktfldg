@@ -1,4 +1,4 @@
-import './index.sass'
+import './index.styl'
 
 class BrktFldg {
 
