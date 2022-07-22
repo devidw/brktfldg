@@ -222,6 +222,10 @@ class BrktFldg {
      * Main function to process the content and make all brackets collapsible
      */
     collapseBrackets() {
+        if (!this.el) {
+            return
+        }
+
         const isCollapsed = this.el.querySelector('brktfldg-container')
 
         if (isCollapsed) {
