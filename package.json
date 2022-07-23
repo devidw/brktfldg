@@ -1,6 +1,6 @@
 {
   "name": "@devidw/brktfldg",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Bracket folding. Collapse and expand all brackets on any website.",
   "main": "dist/brktfldg.js",
   "type": "module",
