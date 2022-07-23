@@ -19,7 +19,9 @@
 			"extensions": [
 				"dbaeumer.vscode-eslint",
 				"GitHub.copilot",
-				"sysoev.language-stylus"
+				"sysoev.language-stylus",
+				"ritwickdey.LiveServer",
+				"esbenp.prettier-vscode"
 			]
 		}
 	},

@@ -1,12 +1,12 @@
 {
   "name": "@devidw/brktfldg",
-  "version": "0.3.4",
+  "version": "0.4.0",
   "description": "Bracket folding. Collapse and expand all brackets on any website.",
   "main": "dist/brktfldg.js",
   "type": "module",
   "scripts": {
-    "build": "webpack",
-    "watch": "webpack --watch"
+    "build": "webpack --mode production",
+    "watch": "webpack --mode development --watch"
   },
   "devDependencies": {
     "css-loader": "^6.7.1",
