@@ -177,8 +177,8 @@ class BrktFldg {
                 }
             }
 
-            applyRmToEl(content.firstChild, rmOpenCharHelper, this.options.replacements[0])
-            applyRmToEl(content.lastChild, rmCloseCharHelper, this.options.replacements[1])
+            applyRmToEl(content.firstChild, rmOpenCharHelper, this.options.needles[0])
+            applyRmToEl(content.lastChild, rmCloseCharHelper, this.options.needles[1])
         }
     }
 
