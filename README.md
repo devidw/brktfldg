@@ -35,12 +35,14 @@ Optionally an options object can be passed to the `collapseBrackets` function to
 The following configuration options are available with their default values:
 
 ```js
-{
-    openChar: '(', // Replaces the original opening bracket
-    closeChar: ')', // Replaces the original closing bracket
-    placeholder: '…', // Displayed as text for the toggle to expand and collapse the content
-    shortMaxWords: 1, // Number of words to determine if the content is short, quick expanding is possible on short conent when enabled and the word count is not displayed on short content
-    wordCount: true, // Show word count
-    expandShortOnHover: true, // Expand brackets with short content on hover
-}
+    {
+        needles: ["(", ")"], // The characters to search for
+        needleRegex: /\((?!\))|(?<!\()\)/g, // The regex to test text nodes for
+        replacements: ["(", ")"], // Replaces the original opening and closing bracket characters with the given ones
+        placeholder: "…", // Displayed as text for the toggle to expand and collapse the content
+        shortMaxWords: 1, // Number of words to determine if the content is short, quick expanding is possible on short conent when enabled and the word count is not displayed on short content
+        wordCount: true, // Show word count
+        expandShortOnHover: true, // Expand brackets with short content on hover
+        ignoreTags: ["script", "style", "pre", "code", "brktfldg-container"], // Ignore these tags
+    }
 ```
