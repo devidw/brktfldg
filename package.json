@@ -1,6 +1,6 @@
 {
   "name": "@devidw/brktfldg",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Bracket folding. Collapse and expand all brackets on any website.",
   "main": "dist/brktfldg.js",
   "type": "module",
@@ -25,12 +25,15 @@
     "readability",
     "focus",
     "enhancement",
-    "bracket"
+    "bracket",
+    "simplify",
+    "simplification",
+    "clean"
   ],
   "author": "David Wolf",
   "license": "GPL-3.0-or-later",
   "bugs": {
     "url": "https://github.com/devidw/brktfldg/issues"
   },
-  "homepage": "https://github.com/devidw/brktfldg#readme"
+  "homepage": "https://brktfldg.netlify.app"
 }
