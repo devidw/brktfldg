@@ -1,4 +1,10 @@
-# brktfldg
+<h1 align=center>
+    <a href="https://brktfldg.netlify.app">
+        <img src=./docs/assets/cover.png width=500>
+    </a>
+    <br>
+    brktfldg
+</h1>
 
 Read [about](https://brktfldg.netlify.app) the project
 
